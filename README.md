@@ -2,7 +2,11 @@
 
 Converts all `wav` files to 16-bit for use on the [Dirtywave M8](https://dirtywave.com/).
 
-Copies all files in an input directory tree, converting `wav` files to 16-bit and skipping Ableton `asd` files. `m8_converter` will preserve your directory strucutre and is non-destructive. Additionally, it will skip a file if it already exists in the output directory (default `./output`). `m8_converter` uses Python's multiprocessing pool functionality to delegate file processing (evaluation, conversion, and/or copying) between all available processors, greatly speeding up the process of converting large amounts of files.
+Copies all files in an input directory tree, converting `wav` files to 16-bit and skipping Ableton `asd` files. 
+
+- `m8_converter` will preserve your directory strucutre and is non-destructive
+- Additionally, it will skip a file if it already exists in the output directory (default `./output`)
+- `m8_converter` uses Python's multiprocessing pool functionality to delegate file processing (evaluation, conversion, and/or copying) between all available processors, greatly speeding up the process of converting large amounts of files
 
 The program takes the following steps:
 
