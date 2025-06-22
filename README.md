@@ -33,7 +33,7 @@ options:
 
 `python m8_converter.py ./input`
 
-*this command will copy all files, converting those with a bit depth other than 16, to the directory `output`*
+*This command will copy all files, converting those with a bit depth other than 16, to the directory `output`*
 
 ## Setup
 
