@@ -8,7 +8,9 @@ Copies all files in an input directory tree, converting `wav` files to 16-bit an
 - Additionally, it will skip a file if it already exists in the output directory (default `./output`)
 - `m8_converter` uses Python's multiprocessing pool functionality to delegate file processing (evaluation, conversion, and/or copying) between all available processors, greatly speeding up the process of converting large amounts of files
 
-The program takes the following steps:
+Shoutout to [birds-inc](https://github.com/birds-inc/m8-sample-organizer) for giving me the idea to write this. Differences are the use of `ffmpeg-python`, multiprocessing, and not changing your directory structure/filenames. If you would like a way to perform this conversion and sort your files, then please check out their repo.
+
+## Execution Steps
 
 1. Walks through all files in the input directory
 1. Determines the bit depth using `ffmpeg`
@@ -16,8 +18,6 @@ The program takes the following steps:
     1. is a `wav` file
     1. is not 16-bit
 1. Otherwise, copies the file
-
-Shoutout to [birds-inc](https://github.com/birds-inc/m8-sample-organizer) for giving me the idea to write this. Differences are the use of `ffmpeg-python`, multiprocessing, and not changing your directory structure/filenames. If you would like a way to perform this conversion and sort your files, then please check out their repo.
 
 ## Usage
 
