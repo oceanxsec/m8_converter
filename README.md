@@ -17,7 +17,7 @@ Shoutout to [birds-inc](https://github.com/birds-inc/m8-sample-organizer) for gi
 1. Converts the file if it
     1. is a `wav` file
     1. is not 16-bit
-1. Otherwise, copies the file
+1. Otherwise, copies the file unless it is an `asd` file
 
 ## Usage
 
